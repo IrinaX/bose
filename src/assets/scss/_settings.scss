@@ -28,12 +28,12 @@ $black: #0a0a0a;
 $white: #ffffff;
 $pre-color: #ff6908;
 $global-width: 580px;
-$global-width-small: 95%;
-$global-gutter: 16px;
+$global-width-small: 100%;
+$global-gutter: 0;
 $body-background: $dark-gray;
 $container-background: $dark-gray;
-$global-padding: 16px;
-$global-margin: 16px;
+$global-padding: 0;
+$global-margin: 0;
 $global-radius: 3px;
 $global-rounded: 500px;
 $global-breakpoint: $global-width + $global-gutter;
@@ -69,8 +69,8 @@ $h3-font-size: 20px;
 $h4-font-size: 16px;
 $h5-font-size: 14px;
 $h6-font-size: 12px;
-$header-margin-bottom: 10px;
-$paragraph-margin-bottom: 10px;
+$header-margin-bottom: 0;
+$paragraph-margin-bottom: 0;
 $small-font-size: 80%;
 $small-font-color: $medium-gray;
 $lead-font-size: $global-font-size * 1.25;
@@ -97,13 +97,13 @@ $stat-font-size: 40px;
 $button-padding: (
         tiny: 4px 8px 4px 8px,
         small: 5px 10px 5px 10px,
-        default: 10px 30px 10px 30px,
+        default: 10px 40px 10px 40px,
         large: 10px 20px 10px 20px,
 );
 $button-font-size: (
         tiny: 10px,
         small: 12px,
-        default: 14px,
+        default: 10px,
         large: 20px,
 );
 $button-color: $white;

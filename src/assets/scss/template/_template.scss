@@ -1,15 +1,17 @@
 // These are the styles to make some of the templates look extra nice.
 // Feel free to remove these styles for production!
 
-// Body Styles 
+// Body Styles
 body,
-html, 
+html,
 .body {
-  background: #f3f3f3 !important;
+  overflow-x: visible;
+  overflow-y: hidden;
+  background: #464646 !important;
 }
 
 .container.header {
-  background: #f3f3f3;
+  background: #464646;
 }
 
 .body-drip {
@@ -17,17 +19,20 @@ html,
 }
 
 // Full Width Headers
-.header {
-  background: #8a8a8a;
-}
 
 .header .columns {
   padding-bottom: 0;
 }
 
 .header p {
-  color: #fff;
-  padding-top: 15px;
+  color: #6e6e6e;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+.footer p {
+  color: #6e6e6e;
+  padding-right: 16px;
+  padding-left: 16px;
 }
 
 .header .wrapper-inner {
@@ -56,4 +61,9 @@ table.button.google table td {
 
 .wrapper.secondary {
   background: #f3f3f3;
+}
+//button
+table.button table td a{
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
 }

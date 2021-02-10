@@ -1,6 +1,10 @@
 @import 'settings';
 @import 'foundation-emails';
 
+@import "template/template";
+.overflow{
+  overflow-y: hidden;
+}
 .header {
   a {
     color: $medium-gray !important;
@@ -35,16 +39,12 @@
     padding-top: 0;
     padding-right: 50px;
     padding-left: 50px;
-    padding-bottom: 10px;
-    margin-top: 0;
-    margin-right: 0;
-    margin-left: 0;
-    margin-bottom: 0;
+    padding-bottom: 0;
     @media only screen and (max-width: #{$global-breakpoint}) {
       padding-top: 0 !important;
-      padding-right: 0 !important;
-      padding-left: 0 !important;
-      padding-bottom: 10px !important;
+      padding-right: 16px !important;
+      padding-left: 16px !important;
+      padding-bottom: 0 !important;
     }
   }
 
@@ -68,11 +68,10 @@
     text-transform: uppercase;
     font-weight: 800;
     font-size: 14px;
-    margin-bottom: 0;
     @media only screen and (max-width: #{$global-breakpoint}) {
       padding-top: 0 !important;
-      padding-right: 0 !important;
-      padding-left: 0 !important;
+      padding-right: 16px !important;
+      padding-left: 16px !important;
       padding-bottom: 0 !important;
     }
   }
@@ -84,11 +83,10 @@
     padding-bottom: 0;
     line-height: 1.5;
     font-size: 14px;
-    margin-bottom: 0;
     @media only screen and (max-width: #{$global-breakpoint}) {
       padding-top: 0 !important;
-      padding-right: 0 !important;
-      padding-left: 0 !important;
+      padding-right: 16px !important;
+      padding-left: 16px !important;
       padding-bottom: 0 !important;
     }
   }
