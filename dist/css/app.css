@@ -388,22 +388,6 @@ html,
   overflow-x: visible;
   background: #464646 !important; }
 
-.container.header {
-  background: #464646; }
-
-.header .columns {
-  padding-bottom: 0; }
-
-.header p {
-  color: #6e6e6e;
-  padding-right: 16px;
-  padding-left: 16px; }
-
-.footer p {
-  color: #6e6e6e;
-  padding-right: 16px;
-  padding-left: 16px; }
-
 table.button table td a {
   text-transform: uppercase;
   letter-spacing: 1.5px; }
@@ -852,6 +836,103 @@ table.btn-white table td {
   margin-bottom: 0; }
 
 .sunglasses-footer__privacy {
+  text-align: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 9px !important; }
+
+.tvspeaker-header p {
+  padding-bottom: 12px;
+  padding-right: 16px !important;
+  padding-left: 16px !important; }
+
+.tvspeaker-header__title {
+  color: #ffffff;
+  letter-spacing: 1.5px;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding-right: 16px !important;
+  padding-left: 16px !important; }
+
+.tvspeaker-header__subtitle {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: normal; }
+
+.tvspeaker-header__link-wrap {
+  text-align: right; }
+  .tvspeaker-header__link-wrap a {
+    color: #adacac !important;
+    font-size: 12px; }
+
+.tvspeaker-top {
+  background-color: #986b4b;
+  background-image: url("https://i.ibb.co/0tRr09q/Bose-TV-Speaker.jpg") !important;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .tvspeaker-top__logo-img {
+    display: inline; }
+  .tvspeaker-top__title {
+    font-size: 47px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0;
+    line-height: 1; }
+
+.tvspeaker-img-block {
+  background-color: #ffffff;
+  background-image: url("https://i.ibb.co/P9jw3VB/TVSpeaker.jpg") !important;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  @media only screen and (max-width: 580px) {
+    .tvspeaker-img-block {
+      background-size: contain !important; } }
+  .tvspeaker-img-block__label-wrap {
+    padding-top: 4px; }
+  .tvspeaker-img-block__label {
+    padding-top: 5px;
+    padding-right: 13px;
+    padding-left: 13px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 2px;
+    background-color: #54596c; }
+
+.tvspeaker-text-block {
+  background-color: #ffffff !important; }
+  .tvspeaker-text-block__title {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 0; }
+  .tvspeaker-text-block__content {
+    line-height: 1.5;
+    font-size: 14px;
+    margin-bottom: 0; }
+  .tvspeaker-text-block__btn table td {
+    background-color: #181818 !important; }
+  .tvspeaker-text-block__btn table td a {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important; }
+
+.tvspeaker-footer p, .tvspeaker-footer a {
+  color: #676767 !important;
+  font-size: 14px;
+  margin-bottom: 0; }
+
+.tvspeaker-footer__privacy {
   text-align: center;
   padding-left: 16px;
   padding-right: 16px;

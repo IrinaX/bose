@@ -1,16 +1,20 @@
-@import 'settings';
-@import 'foundation-emails';
+$tvspeaker-bg-color: #464646;
+$tvspeaker-black: #181818;
+$tvspeaker-white: #ffffff;
+$tvspeaker-light-gray: #adacac;
+$tvspeaker-medium-gray: #676767;
+$tvspeaker-dark-gray: #54596c;
+$tvspeaker-top-bg-plug: #986b4b;
 
-@import 'template/template';
-@import "base";
+.tvspeaker-header {
+  p {
+    padding-bottom: 12px;
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+  }
 
-.overflow {
-  overflow-y: hidden;
-}
-
-.header {
-  .header__title {
-    color: $white;
+  &__title {
+    color: $tvspeaker-white;
     letter-spacing: 1.5px;
     font-size: 12px;
     text-transform: uppercase;
@@ -18,32 +22,36 @@
     padding-left: 16px !important;
   }
 
-  .header__subtitle {
-    color: $white;
+  &__subtitle {
+    color: $tvspeaker-white;
     font-size: 12px;
     font-weight: normal;
-    padding-right: 16px !important;
-    padding-left: 16px !important;
-    padding-bottom: 12px;
   }
 
-  a {
-    color: $light-gray !important;
-    font-size: 12px;
+  &__link-wrap {
+    text-align: right;
+
+    a {
+      color: $tvspeaker-light-gray !important;
+      font-size: 12px;
+    }
   }
 }
 
-.top {
-  background-color: #986b4b;
+.tvspeaker-top {
+  background-color: $tvspeaker-top-bg-plug;
   background-image: url("https://i.ibb.co/0tRr09q/Bose-TV-Speaker.jpg") !important;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 
-  .top__title {
+  &__logo-img {
+    display: inline;
+  }
+
+  &__title {
     font-size: 47px;
-    //letter-spacing: 2px;
-    color: $white;
+    color: $tvspeaker-white;
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 0;
@@ -51,8 +59,8 @@
   }
 }
 
-.img-block {
-  background-color: $white;
+.tvspeaker-img-block {
+  background-color: $tvspeaker-white;
   background-image: url("https://i.ibb.co/P9jw3VB/TVSpeaker.jpg") !important;
   background-position: center;
   background-size: cover;
@@ -61,80 +69,72 @@
     background-size: contain !important;
   }
 
-  .img-block__label-wrap {
+  &__label-wrap {
     padding-top: 4px;
   }
 
-  .img-block__label {
+  &__label {
     padding-top: 5px;
     padding-right: 13px;
     padding-left: 13px;
     padding-bottom: 5px;
     text-transform: uppercase;
     font-weight: bold;
-    color: $white;
+    color: $tvspeaker-white;
     font-size: 18px;
     letter-spacing: 2px;
-    background-color: #54596c;
+    background-color: $tvspeaker-dark-gray;
   }
 }
 
-.text-block {
-  background-color: $white !important;
+.tvspeaker-text-block {
+  background-color: $tvspeaker-white !important;
 
-  .text-block__title {
+  &__title {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 28px;
     margin-bottom: 0;
   }
 
-  .text-block__content {
+  &__content {
     line-height: 1.5;
     font-size: 14px;
     margin-bottom: 0;
   }
+
+  &__btn {
+    table td {
+      background-color: $tvspeaker-black !important;
+    }
+
+    table td a {
+      padding-top: 12px !important;
+      padding-bottom: 12px !important;
+      padding-left: 30px !important;
+      padding-right: 30px !important;
+      font-weight: 600 !important;
+      font-size: 14px !important;
+      text-transform: uppercase !important;
+      letter-spacing: 2px !important;
+    }
+  }
 }
 
-.footer {
+.tvspeaker-footer {
   p, a {
-    color: $medium-gray !important;
+    color: $tvspeaker-medium-gray !important;
     font-size: 14px;
     margin-bottom: 0;
   }
-}
 
-.footer__privacy {
-  font-size: 9px !important;
-
-}
-
-.p-sm-0 {
-  @media only screen and (max-width: #{$global-breakpoint}) {
-    padding-top: 0 !important;
-    padding-right: 0 !important;
-    padding-left: 0 !important;
-    padding-bottom: 0 !important;
+  &__privacy {
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 9px !important;
   }
 }
 
-.px-sm-3 {
-  @media only screen and (max-width: #{$global-breakpoint}) {
 
-    padding-right: $spacer !important;
-    padding-left: $spacer !important;
 
-  }
-}
-
-.pt-sm-0 {
-  @media only screen and (max-width: #{$global-breakpoint}) {
-    padding-top: 0 !important;
-  }
-}
-
-.pb-sm-3 {
-  @media only screen and (max-width: #{$global-breakpoint}) {
-    padding-bottom: $spacer !important;
-  }
-}
