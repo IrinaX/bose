@@ -1,0 +1,129 @@
+$frames-bg-color: #8a8a8a;
+$frames-black: #181818;
+$frames-white: #ffffff;
+$frames-light-gray: #676767;
+$frames-medium-gray: #888888;
+$frames-dark-gray: #464646;
+$frames-top-bg-plug: #507589;
+
+.frames-header {
+  background: $frames-bg-color;
+
+  &__text {
+    color: $frames-medium-gray;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    padding-bottom: 5px;
+  }
+
+  &__link-wrap {
+    text-align: right;
+    padding-right: 16px;
+    padding-bottom: 10px;
+
+    a {
+      color: $frames-light-gray !important;
+      font-size: 12px;
+    }
+  }
+}
+
+.frames-top {
+  background-color: $frames-top-bg-plug;
+  background-image: url("https://i.ibb.co/F5p59Mn/bg.jpg") !important;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__logo-img {
+    display: inline;
+  }
+
+  &__title {
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: $frames-black;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 0;
+    line-height: 1;
+
+    span {
+      padding-left: 20px;
+      padding-right: 40px;
+      background-color: $frames-white;
+    }
+  }
+}
+
+
+.frames-middle {
+  background-color: $frames-white !important;
+
+  &__title {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  &__content {
+    line-height: 1.5;
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+
+  &__footnote {
+    font-size: 9px;
+  }
+
+  &__btn {
+    table td {
+      background-color: $frames-black !important;
+    }
+
+    @extend %base-btn;
+
+    table td a {
+      padding-left: 50px !important;
+      padding-right: 50px !important;
+    }
+  }
+}
+
+.frames-bottom {
+  &__bg {
+    background-color: $frames-black;
+    background-image: url("https://i.ibb.co/Wsc3psC/glasses.jpg") !important;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.frames-footer {
+  p {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  background: $frames-dark-gray;
+
+  p, a {
+    color: $frames-light-gray !important;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  &__privacy {
+    font-size: 9px !important;
+  }
+}
+
+
+

@@ -1,0 +1,18 @@
+@import "settings";
+/*btn-black*/
+.btn-black {
+  tbody tr td {
+    border: 1px solid $primary-color;
+  }
+  &.btn-small table td{
+    a{
+      font-size: 11px;
+      letter-spacing: 1.5px;
+    }
+  }
+}
+
+table.btn-black table td {
+  border: 1px solid $white;
+}
+/*end btn-black*/

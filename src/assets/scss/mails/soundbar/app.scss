@@ -1,0 +1,136 @@
+$soundbar-bg-color: #464646;
+$soundbar-black: #181818;
+$soundbar-white: #ffffff;
+$soundbar-light-gray: #969696;
+$soundbar-medium-gray: #6a6a6a;
+$soundbar-dark-gray: #464646;
+$soundbar-top-bg-plug: #966b4b;
+
+.soundbar-header {
+  &__link-wrap {
+    padding-right: 16px;
+    text-align: right;
+
+    a {
+      color: $soundbar-medium-gray !important;
+      font-size: 12px;
+    }
+  }
+}
+
+.soundbar-top {
+  background-color: $soundbar-top-bg-plug;
+  background-image: url("https://i.ibb.co/gvBc802/bg.jpg") !important;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-left: 50px;
+  padding-right: 50px;
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+  }
+
+  &__logo-img {
+    display: inline;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 28px;
+    color: $soundbar-white;
+    font-weight: 600;
+    margin-bottom: 0;
+    line-height: 1;
+  }
+}
+
+.soundbar-bottom {
+  background-color: $soundbar-white !important;
+
+  &__label-wrap {
+    padding-top: 0;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 0;
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      padding-top: 0 !important;
+      padding-right: 16px !important;
+      padding-left: 16px !important;
+      padding-bottom: 0 !important;
+    }
+  }
+
+  &__label {
+    padding-top: 3px;
+    padding-right: 7px;
+    padding-left: 7px;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $soundbar-white;
+    font-size: 10px;
+    letter-spacing: 2px;
+    background-color: $soundbar-light-gray;
+  }
+
+  &__title {
+    padding-top: 0;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 14px;
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      padding-top: 0 !important;
+      padding-right: 16px !important;
+      padding-left: 16px !important;
+      padding-bottom: 0 !important;
+    }
+  }
+
+  &__content {
+    padding-top: 0;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 0;
+    line-height: 1.5;
+    font-size: 14px;
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      padding-top: 0 !important;
+      padding-right: 16px !important;
+      padding-left: 16px !important;
+      padding-bottom: 0 !important;
+    }
+  }
+
+  &__btn {
+    table td {
+      background-color: $soundbar-black !important;
+    }
+
+    @extend %base-btn;
+
+    table td a {
+      padding-left: 50px !important;
+      padding-right: 50px !important;
+    }
+  }
+}
+
+.soundbar-footer {
+  p, a {
+    color: $soundbar-medium-gray !important;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  &__privacy {
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 11px !important;
+  }
+}
+
