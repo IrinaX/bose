@@ -1,25 +1,28 @@
 @import "settings";
-%base-btn{
+
+%base-btn {
   table td a {
-      padding-top: 10px !important;
-      padding-bottom: 10px !important;
-      font-weight: 600 !important;
-      font-size: 12px !important;
-      text-transform: uppercase !important;
-      letter-spacing: 2px !important;
-    }
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    font-weight: 600 !important;
+    font-size: 12px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+  }
 }
+
 /*btn-black*/
 .btn-black {
   @extend %base-btn;
+
   tbody tr td {
     border: 1px solid $black;
   }
 
   &.btn-small table td a {
 
-      font-size: 11px !important;
-      letter-spacing: 1.5px !important;
+    font-size: 11px !important;
+    letter-spacing: 1.5px !important;
 
   }
 }
@@ -27,11 +30,11 @@
 table.btn-black table td {
   border: 1px solid $white;
 }
+
 /*end btn-black*/
 
 /*btn-white*/
 .btn-white {
-  @extend %base-btn;
   tbody tr td {
     border: 1px solid $white;
   }
@@ -40,7 +43,7 @@ table.btn-black table td {
     a {
       border-radius: 0;
       background-color: $white;
-      color: $primary-color !important;
+      color: $black !important;
     }
   }
 }
@@ -55,19 +58,22 @@ table.btn-white {
 
 table.btn-white table td {
   background-color: $white;
-  border: 1px solid $primary-color;
+  border: 1px solid $black;
 
   a {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
     background-color: $white;
-    color: $primary-color;
+    color: $black;
     font-size: 11px;
     letter-spacing: 1.5px;
 
     &:hover {
       border-radius: 0;
       background-color: $light-gray;
-      color: $primary-color;
+      color: $black;
     }
   }
 }
+
 /*end btn-white*/

@@ -62,11 +62,11 @@ $sportglasses-top-bg-plug: #514b36;
   &.white {
     background-color: $sportglasses-white !important;
 
-    &__title {
+    .sportglasses-text-block__title {
       color: $sportglasses-black;
     }
 
-    &__content {
+    .sportglasses-text-block__content {
       color: $sportglasses-dark-gray;
     }
   }

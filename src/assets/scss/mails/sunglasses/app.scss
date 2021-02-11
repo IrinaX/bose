@@ -4,44 +4,51 @@ $sunglasses-white: #ffffff;
 $sunglasses-light-gray: #dadada;
 $sunglasses-medium-gray: #adacac;
 $sunglasses-dark-gray: #666666;
-$sunglasses-top-bg-plug: #514b36;
+$sunglasses-top-bg-plug: #072b47;
 
-.overflow {
-  overflow-y: hidden;
-}
-
-.header {
-  .header__title {
-    color: $light-gray;
-    //font-size: 12px;
+.sunglasses-header {
+  p {
+    padding-bottom: 12px;
     padding-right: 16px !important;
     padding-left: 16px !important;
   }
 
-  .header__subtitle {
-    color: $light-gray;
+  &__title {
+    color: $sunglasses-light-gray;
+    font-size: 12px;
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+  }
+
+  &__subtitle {
+    color: $sunglasses-light-gray;
     font-size: 12px;
     font-weight: normal;
-    padding-right: 16px !important;
-    padding-left: 16px !important;
-    padding-bottom: 12px;
   }
 
-  a {
-    color: $medium-gray !important;
-    font-size: 11px;
+  &__link-wrap {
+    text-align: right;
+
+    a {
+      color: $sunglasses-medium-gray !important;
+      font-size: 11px;
+    }
   }
 }
 
-.top {
-  background-color: #072b47;
+.sunglasses-top {
+  background-color: $sunglasses-top-bg-plug;
   background-image: url("https://i.ibb.co/3hHYrPx/bg.jpg") !important;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 
-  .top__title {
-    //font-size: 22px;
+  &__logo-img {
+    display: inline;
+  }
+
+  &__title {
+    font-size: 22px;
     letter-spacing: 2px;
     color: $white;
     text-align: right;
@@ -49,62 +56,62 @@ $sunglasses-top-bg-plug: #514b36;
     font-weight: 700;
     margin-bottom: 0;
   }
-  //.float-left{
-  //
-  //}
+
 }
 
-.text-block {
+.sunglasses-text-block {
   &.white {
-    background-color: $white !important;
+    background-color: $sunglasses-white !important;
 
-    .text-block__title {
-      color: $primary-color;
+    .sunglasses-text-block__title {
+      color: $sunglasses-black;
     }
 
-    .text-block__content {
-      color: $dark-gray;
+    .sunglasses-text-block__content {
+      color: $sunglasses-dark-gray;
     }
   }
 
   &.black {
-    background-color: $black !important;
+    background-color: $sunglasses-black !important;
 
-    .text-block__title {
-      color: $white;
-
+    .sunglasses-text-block__title {
+      color: $sunglasses-white !important;
     }
 
-    .text-block__content {
-      color: $white;
+    .sunglasses-text-block__content {
+      color: $sunglasses-white !important;
     }
   }
 
-  .text-block__title {
+  &__title {
     text-transform: uppercase;
     font-weight: 600;
-    //font-size: 28px;
+    font-size: 28px;
     letter-spacing: 2px;
     margin-bottom: 0;
   }
 
-  .text-block__content {
+  &__content {
     line-height: 1.5;
     font-size: 15px;
     margin-bottom: 0;
   }
 }
 
-.footer {
+.sunglasses-footer {
   p, a {
-    color: $medium-gray !important;
+    color: $sunglasses-medium-gray !important;
     font-size: 14px;
     margin-bottom: 0;
   }
+
+  &__privacy {
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 9px !important;
+  }
 }
 
-.footer__privacy {
-  font-size: 9px !important;
-
-}
 
